@@ -1,0 +1,1 @@
+# academico-typeorm-api
