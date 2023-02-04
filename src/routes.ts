@@ -1,8 +1,11 @@
 import { Router } from 'express';
-import { Subject } from './controler/Subject';
+import { SubjectController } from './controller/SubjectController';
+import { RoomController } from './controller/RoomController';
 
 const routes = Router()
 
-routes.post('/subject', new Subject().create)
+routes.post('/subject', new SubjectController().create);
+routes.post('/room', new RoomController().create);
+routes.post('/room/:idRoom/create', new RoomController().create);
 
 export default routes
