@@ -7,8 +7,8 @@ AppDataSource.initialize().then( () => {
 
     app.use(express.json());
 
-    app.use(routes)
+    app.use(routes);
 
     app.listen(process.env.PORT);
-    console.log('api rodando na porta ' + process.env.PORT)
+    console.log('api rodando na porta ' + process.env.PORT);
 });

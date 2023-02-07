@@ -5,18 +5,18 @@ import { Video } from "./Video";
 @Entity('room')
 export class Room {
     @PrimaryGeneratedColumn()
-    public id?: number
+    public id?: number;
 
     @Column({ type: 'text' })
-    public name?: string
+    public name?: string;
     
     @Column({ type: 'text', nullable: true })
-    public description?: string
+    public description?: string;
     
     @OneToMany(() => Video, video => video.room)
-    public videos?: Video[]
+    public videos?: Video[];
 
     @ManyToMany(() => Subject, subject => subject.rooms )
-    subjects?: Subject[]
+    subjects?: Subject[];
 
 }

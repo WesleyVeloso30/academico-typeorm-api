@@ -22,5 +22,5 @@ export class Subject {
             referencedColumnName: 'id',
         },
     })
-    rooms?: Room[]
+    rooms?: Room[];
 }
